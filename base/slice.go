@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var s1 []int
+	var s1 []int //没有分配内存，==nil
 	var s2 []string
 	fmt.Println(s1)
 	fmt.Println(s2)
@@ -13,7 +13,7 @@ func main() {
 	a1 := [...]int{1, 3, 5, 7, 9}
 	fmt.Println(a1[1:])
 
-	ss := make([]int, 33, 33)
+	ss := make([]int, 33, 33) //分配内存，初始化
 	ss = append(ss, 1)
 	fmt.Println(ss)
 	fmt.Println(len(ss))
