@@ -19,7 +19,7 @@ func f1() int {
 }
 
 //6
-func f2()(x int){
+func f2()(x int){ 
 	defer func(){
 		x++
 	}
