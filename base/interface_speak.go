@@ -39,4 +39,11 @@ func main() {
 	hit(c1)
 	hit(d1)
 	hit(p1)
+
+	var ss speaker
+	ss = c1
+	ss = d1
+	ss = p1
+
+	fmt.Println(ss)
 }
