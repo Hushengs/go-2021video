@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	logger := ploglib.NewLog("info")
+	// logger := ploglib.NewLog("info")
+	logger := ploglib.NewFileLogger("error", "./", "hushengs.log", 1*1024)
 	for {
 		id := 507
 		name := "hushengs"
