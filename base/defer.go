@@ -22,7 +22,7 @@ func f1() int {
 func f2()(x int){ 
 	defer func(){
 		x++
-	}
+	}()
 	return 5
 }
 
@@ -44,10 +44,14 @@ func f4()(x int){
 }
 
 func deferDemo() {
-	fmt.Println("start")
-	defer fmt.Println("hushengs")
-	defer fmt.Println("hello")
-	fmt.Println("end")
+	fmt.Println(f1)
+	fmt.Println(f1)
+	fmt.Println(f1)
+	fmt.Println(f1)
+	// fmt.Println("start")
+	// defer fmt.Println("hushengs")
+	// defer fmt.Println("hello")
+	// fmt.Println("end")
 }
 
 func main() {
